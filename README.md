@@ -1,1 +1,1 @@
-<h1><a href="http://127.0.0.1:5500/index.html#equipe"> Link do site </a></h1>
+<h1><a href="https://lopes7890.github.io/speciusTech-PI-2SEM/"> Link do site </a></h1>
