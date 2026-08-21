@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #1E293B;
+}
+.header {
+    background-color: #1E293B;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5 rgba(0, 0, 0, 0.1);
+
+}
+.hero-section {
+    height: 500px;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgb(0, 0, 0)
+    ),
+    url("https://images.unsplash.com/photo-1644175283511-f72f5cedc9de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 8%;
+    box-shadow: 0, 10, 20, -15 rgb(0, 0, 0, 0.15);
+}
+
+.hero-content {
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    margin: 0;
+    color: rgb(250, 250, 250);
+    margin-left: 12rem;
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 0px 0px 10px rgba(220, 212, 212, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-left: 15rem;
+    color: white;
+    font-family: "montserrat", sans-serif;
+font-weight: 100;
+font-style: normal;
+text-shadow: 3px 3px 10px rgba(220, 212, 212, 1.0);
+
+
+}
+.imagem {
+    height: 450px;
+    z-index: 1;
+    position: absolute;
+    justify-content: left;
+    align-items: left;
+    margin-right: 20rem;
+    opacity: 0.75;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.menu {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.menu a:hover {
+    color: #ffffffe6;
+}
+
+/* ==============================
+   SOBRE A SPECIUSTECH
+============================== */
+
+.about-section {
+    width: 100%;
+    padding: 100px 8%;
+
+    background-color: #1E293B;
+    color: white;
+}
+
+
+/* CONTAINER */
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* TEXTO */
+
+.about-content {
+    max-width: 600px;
+}
+
+
+/* PEQUENO TÍTULO */
+
+.section-tag {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #38BDF8;
+}
+
+
+/* TÍTULO */
+
+.about-content h2 {
+    margin-bottom: 25px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+
+    line-height: 1.1;
+
+    font-weight: 700;
+}
+
+
+/* PARTE DESTACADA DO TÍTULO */
+
+.about-content h2 span {
+    color: #38BDF8;
+}
+
+
+/* PARÁGRAFOS */
+
+.about-content p {
+    margin-bottom: 18px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    color: #CBD5E1;
+}
+
+
+/* TEXTO EM NEGRITO */
+
+.about-content strong {
+    color: white;
+}
+
+
+/* BOTÃO */
+
+.about-button {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 24px;
+
+    border: 1px solid #38BDF8;
+
+    border-radius: 8px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+
+/* HOVER DO BOTÃO */
+
+.about-button:hover {
+
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   IMAGEM
+============================== */
+
+.about-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background-color: #0F172A;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* IMAGEM */
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        opacity 0.8s ease,
+        transform 5s ease;
+}
+
+
+/* EFEITO QUANDO A IMAGEM TROCA */
+
+.about-image img.fade {
+    opacity: 0;
+}
+
+
+/* SOBREPOSIÇÃO ESCURA */
+
+.image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15, 23, 42, 0.15),
+            rgba(15, 23, 42, 0.45)
+        );
+
+    pointer-events: none;
+}
+
+
+/* CONTADOR */
+
+
+
+
+/* IMAGEM ATUAL */
+
+#current-image {
+    color: #38BDF8;
+
+    font-weight: 700;
+}
