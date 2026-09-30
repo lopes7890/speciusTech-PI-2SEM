@@ -10,7 +10,7 @@ body {
     background-color: #1E293B;
 }
 .header {
-    background-color: #1E293B;
+    background-image: linear-gradient(135deg, #1f3252, #0f1b2f);
     color: white;
     padding: 1rem 0;
     position: sticky;
@@ -62,11 +62,9 @@ body {
     margin-left: 15rem;
     color: white;
     font-family: "montserrat", sans-serif;
-font-weight: 100;
-font-style: normal;
-text-shadow: 3px 3px 10px rgba(220, 212, 212, 1.0);
-
-
+    font-weight: 100;
+    font-style: normal;
+    text-shadow: 3px 3px 10px rgba(220, 212, 212, 1.0);
 }
 .imagem {
     height: 450px;
@@ -103,8 +101,9 @@ text-shadow: 3px 3px 10px rgba(220, 212, 212, 1.0);
     transition: color 0.3s;
 }
 .menu a:hover {
-    color: #ffffffe6;
+    color: #36D2AA;
 }
+
 
 /* ==============================
    SOBRE A SPECIUSTECH

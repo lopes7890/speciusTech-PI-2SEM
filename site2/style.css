@@ -6,8 +6,16 @@
 }
 body {
     background-color: rgb(100,100,100);
-    font-family: sans-serif ;
+    
 }
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 
 /* ===============================
 HEADER
@@ -23,21 +31,25 @@ HEADER
     position: fixed;
     margin-top: 10px;
     padding: 10px 50px;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
     width: 70vw;
+    
+    /* 1. Efeito de Vidro */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+    /* 2. Borda com Gradiente */
+    border: 2px solid transparent; 
     border-radius: 30px;
-    border: 1px solid transparent; 
-  
+    
+    /* O truque do gradiente na borda */
     background-image: 
-        linear-gradient(#050505, #121212), 
-        linear-gradient(to top, rgba(255,255,255,0.4), rgba(255,255,255,0.1)); 
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), /* Camada de fundo (vidro) */
+        linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); /* Seu gradiente de borda aqui */
     
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -61,12 +73,12 @@ HEADER
 .navbar a {
     text-decoration: none;
     color: white;
-    font-weight: 200;
+    font-weight: 300;
 
     transition: all ease 0.3s;
 }
 .navbar a:hover {
-    color: #0059CE;
+    color: #398fff;
 }
 
 /* ===============================
@@ -75,11 +87,12 @@ HERO SECTION
 
 .hero-section {
     background-color: #050505;
+    color: white;
     padding: 100px 0;
     overflow: hidden;
 }
 
-.hero-content {
+.hero-container {
     position: relative;
     height: 70vh;
 }
@@ -92,6 +105,27 @@ HERO SECTION
     background: radial-gradient(circle, rgba(0,19,113,1) -50%, rgba(0,0,0,0) 70%);
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+.hero-logo {
+    display: flex;
+    flex-direction: column;
+}
+.hero-content-text h1{
+    color: white;
+    font-weight: rgb(57, 129, 255);
+    font-weight: 200;
+}
+.hero-animation {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-weight: 700;
+    font-size: 40px;
+}
 /* ===============================
 HEADER
 =============================== */
