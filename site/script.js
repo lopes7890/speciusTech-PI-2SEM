@@ -14,38 +14,23 @@ let aboutIndex = 0;
 
 // MOSTRA QUANTAS IMAGENS EXISTEM
 
-
-
-
 // FUNÇÃO PARA TROCAR A IMAGEM
 
 function changeAboutImage() {
-
     // começa a desaparecer
     aboutSlider.classList.add("fade");
-
-
     setTimeout(() => {
-
         // próxima imagem
         aboutIndex++;
-
-
         // volta para a primeira
         if (aboutIndex >= aboutImages.length) {
             aboutIndex = 0;
         }
-
-
         // altera a imagem
         aboutSlider.src = aboutImages[aboutIndex];
-
-
         // atualiza contador
 
-
-
-        // aparece novamente
+       // aparece novamente
         aboutSlider.classList.remove("fade");
 
     }, 800);
