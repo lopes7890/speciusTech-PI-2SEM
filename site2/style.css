@@ -5,7 +5,7 @@
     /* border: 1px solid red; */
 }
 body {
-    background-color: rgb(100,100,100);
+    background-color: rgb(245, 245, 246);
     
 }
 
@@ -38,12 +38,10 @@ HEADER
     width: 70vw;
     
     /* 1. Efeito de Vidro */
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(0, 0, 0, 0.1); 
+    border: 1.5px solid rgba(255,255,255,0.2);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    
-    /* 2. Borda com Gradiente */
-    border: 2px solid transparent; 
     border-radius: 30px;
 }   
 
@@ -103,7 +101,7 @@ HERO SECTION
     gap: 4vh;
 }
 .hero-logo {
-    margin-top: 70px;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
 }
@@ -132,17 +130,16 @@ HERO SECTION
     10% {transform: translateX(-1100px);}
     
     20% {transform: translateX(-1100px);}
-    30% {transform: translateX(-1100px);}
     
+    30% {transform: translateX(-730px);}
     40% {transform: translateX(-730px);}
-    50% {transform: translateX(-730px);}
     
+    50% {transform: translateX(-400px);}
     60% {transform: translateX(-400px);}
-    70% {transform: translateX(-400px);}
     
+    70% {transform: translateX(0);}
     80% {transform: translateX(0);}
-    90% {transform: translateX(0);}
-    100% {transform: translateX(320px);}
+    100% {transform: translateX(350px);}
 }
 /* ===============================
 HEADER
