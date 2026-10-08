@@ -168,6 +168,37 @@ SOBRE
 .sobre-section {
     padding: 100px 0;
 }
+.sobre-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.sobre-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+.sobre-content-text h2 {
+    font-size: clamp(4vh, 40px, 4.5vh);
+}
+.sobre-content-text p {
+    font-size: clamp(2vh, 20px, 2.5vh);
+}
+.sobre-content-img {
+    background-color: #d9d9d9;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.3s;
+}
+.sobre-content-img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
 
 /* ===============================
 HEADER
