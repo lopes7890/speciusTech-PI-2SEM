@@ -167,6 +167,7 @@ SOBRE
 
 .sobre-section {
     padding: 100px 0;
+    background-color: #f5f8ff;
 }
 .sobre-content {
     display: flex;
@@ -232,7 +233,7 @@ HEADER
    ========================================= */
 
 .projetos-section {
-    padding: 80px 0;
+    padding: 100px 0;
     background: #f5f8ff;
     color: #152748;
     overflow: hidden;
