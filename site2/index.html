@@ -19,7 +19,7 @@
         <div class="header">
             <a href="">
                 <div class="header-logo">
-                    <img src="./imgs/logo/Group 6.svg" alt="" width="90px">
+                    <img src="./imgs/logo/Group 6.svg" alt="" width="90px" class="logo-SPECIUS">
                     <img src="./imgs/logo/SPECIUS.svg" alt="" width="90px" class="logo-SPECIUS">
                 </div>
             </a>
@@ -38,11 +38,17 @@
             <div class="hero-container">
                 <div class="efx" style="top: -800px; right: -800px;"></div>
                 <div class="efx" style="bottom: -800px; left: -800px;"></div>
+                <div class="constelacoes">
+                    <div class="estrela antlia"><img src="imgs/estrelas-hero/Antlia.svg" alt="Antlia"></div>
+                    <div class="estrela horologium"><img src="imgs/estrelas-hero/Horologium.svg" width="300px" alt="Horologium"></div>
+                    <div class="estrela octans"><img src="imgs/estrelas-hero/Octans.svg" width="200px" alt="Octans"></div>
+                    <div class="estrela telescopium"><img src="imgs/estrelas-hero/Telescopium.svg" width="300px" alt="Telescopium"></div>
+                </div>
                 <div class="container ascend">
                     <div class="hero-content">
                         <div class="hero-logo">
-                            <img src="./imgs/logo/Group 6.svg" alt="" width="600px">
-                            <img src="./imgs/logo/SPECIUS.svg" alt="" width="600px">
+                            <img src="./imgs/logo/Group 6.svg" alt="" width="600px" style="filter: drop-shadow(0 0 20px rgb(0,0,0, 1));">
+                            <img src="./imgs/logo/SPECIUS.svg" alt="" width="600px" style="filter: drop-shadow(0 0 20px rgb(0,0,0, 1)); z-index: 100;" class="logo-SPECIUS">
                         </div>
                         <div class="hero-content-text montserrat">
                             <h1>Soluções tecnológicas feitas <br>especialmente para você com</h1>
@@ -55,7 +61,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#sobre" class="btn-hero">Conheça nossas soluções</a>
+                        <a href="#projetos" class="btn-hero" style="filter: drop-shadow(0 0 20px rgb(0,0,0, 1)); z-index: 100;">Conheça nossas soluções</a>
                     </div>
                 </div>
             </div>
@@ -98,19 +104,21 @@
                         ideias em soluções inovadoras.
                     </p>
                 </div>
-                <!-- ÍCONES CLICÁVEIS -->
+                <!-- ÍCONES CLICÁVEIS
                 <div class="projetos-lista">
                     <button class="projeto-icone ativo" data-projeto="0" aria-pressed="true">
                         <img class="imagem-projeto" src="../site2/imgs/logo/Logo Vetorizada.svg"></img>
                         <span>GUSTER</span>
                     </button>
-                </div>
+                </div> -->
                 <!-- CONTEÚDO QUE MUDA AO CLICAR -->
                 <div class="projeto-detalhes" aria-live="polite">
                     <div class="projeto-texto">
                         <div class="projeto-logo-texto">
-                            <img src="/site2/imgs/logo/Logo Vetorizada.svg" width="300px" height="200px" alt="">
-                            <span id="projeto-numero">GUSTER</span>
+                            <div class="projeto-logo-nome">
+                                <img src="/site2/imgs/logo/LogoGuster.svg" width="200px" height="150px" id="icone" alt="">
+                                <span id="projeto-numero">GUSTER</span>
+                            </div>
                             <h3 id="projeto-titulo">
                                 EEG e alterações de paladar pós-COVID-19
                             </h3>
@@ -143,13 +151,12 @@
                     <div class="projeto-galeria">
 
                         <div class="projeto-imagem-principal" id="projeto-imagem-principal">
-                            <span>Imagem principal do projeto</span>
-                            <small>Adicione sua imagem posteriormente</small>
+                            <img src="imgs/Dashboard.png" width="100%" alt="">
                         </div>
                         <div class="projeto-miniaturas">
-                            <div>Imagem 1</div>
-                            <div>Imagem 2</div>
-                            <div>Imagem 3</div>
+                            <div><img src="imgs/BCI.webp" alt=""></div>
+                            <div><img src="imgs/Consulta-com-BCI.png" alt=""></div>
+                            <div><img src="imgs/exameBCI.png" alt=""></div>
                         </div>
                     </div>
                 </div>

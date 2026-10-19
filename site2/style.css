@@ -31,7 +31,7 @@ HEADER
 }
 
 .header {
-    z-index: 100;
+    z-index: 101;
     position: fixed;
     margin-top: 10px;
     padding: 10px 50px;
@@ -43,7 +43,7 @@ HEADER
     min-height: 7vh;
     
     /* 1. Efeito de Vidro */
-    background: rgba(0, 0, 0, 0.8); 
+    background: rgba(0, 0, 0, 0.6); 
     border: 1.5px solid rgba(255,255,255,0.2);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -66,9 +66,10 @@ HEADER
     text-decoration: none;
     color: white;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: clamp(1.8vh, 20px, 1vw);
 
     transition: all ease 0.3s;
+    animation: aparecer-hero-2 1s ease;
 }
 .navbar a:hover {
     color: #398fff;
@@ -83,6 +84,9 @@ HERO SECTION
     color: white;
     padding: 100px 0;
     overflow: hidden;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.9)),
+        url('imgs/background/background.png');
 }
 
 .hero-container {
@@ -99,19 +103,52 @@ HERO SECTION
 }
 
 .hero-content {
+    z-index: 10;
     display: flex;
     flex-direction: column;
     gap: 5vh;
 }
 .hero-logo {
+    z-index: 100;
     margin-top: 1vh;
     display: flex;
     flex-direction: column;
+    filter: drop-shadow(0 0 20px rgb(0,0,0, 1));
+    animation: aparecer-hero-1 1s ease;
+}
+.logo-SPECIUS {
+    animation: aparecer-hero 1s ease;
+}
+@keyframes aparecer-hero-1 {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes aparecer-hero-2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .hero-content-text h1{
     color: white;
     font-weight: 200;
+    text-shadow: 0 0 20px #000;
+    animation: aparecer-hero-2 1.5s ease;
 }
 .animation-container {
     width: 325px;
@@ -127,6 +164,10 @@ HERO SECTION
     font-size: 40px;
     transform: translateX(-1400px);
     animation: animate 10s ease infinite reverse;
+}
+.hero-animation span {
+    text-shadow: 0 0 20px #000;
+    z-index: 100;
 }
 @keyframes animate {
     10% {transform: translateX(-1100px);}
@@ -145,8 +186,9 @@ HERO SECTION
 }
 
 .btn-hero {
+    z-index: 10;
     color: #398fff;
-    font-size: 25px;
+    font-size: 1.5vw;
     text-decoration: none;
     padding: 10px 20px;
     background-color: transparent;
@@ -159,8 +201,80 @@ HERO SECTION
     background-color: #398fff;
     border: 2px solid #398fff; 
     color: white;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
+
+.constelacoes {
+    z-index: 11;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.estrela {
+    position: relative;
+    filter: drop-shadow(0 0 10px rgb(255, 96, 33));
+    z-index: 1;
+}
+@keyframes stars {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.antlia {
+    position: absolute;
+    right: 5vh;
+    top: 5vh;
+    animation: stars 1s ease;
+}
+.antlia img {
+    width: 22vw;
+}
+.horologium {
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    animation: stars 1.75s ease;
+}
+.horologium img {
+    width: 22vw;
+}
+.octans {
+    position: absolute;
+    right: 600px;
+    top: 50px;
+    animation: stars 2.5s ease;
+}
+.octans img {
+    width: 13vw;
+}
+.telescopium {
+    position: absolute;
+    right: 600px;
+    top: 200px;
+    animation: stars 3.25s ease;
+}
+.telescopium img {
+    width: 22vw;
+}
+
+@keyframes aparecer-hero {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 /* ===============================
 SOBRE
 =============================== */
@@ -172,6 +286,7 @@ SOBRE
 .sobre-content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 100px;
@@ -335,7 +450,6 @@ HEADER
 }
 
 /* DETALHES DO PROJETO */
-
 .projeto-detalhes {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -347,20 +461,10 @@ HEADER
     border-radius: 24px;
     box-shadow: 0 12px 40px rgba(22, 48, 85, 0.06);
 
-    animation: projetoAparecer 0.4s ease;
+    animation: aparecer 01s ease;
 }
 
-@keyframes projetoAparecer {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 #projeto-numero {
     display: inline-block;
@@ -444,8 +548,8 @@ HEADER
 
     text-align: center;
     color: #4779b7;
-    background: linear-gradient(135deg, #e8f2ff, #d5e6ff);
-    border: 2px dashed #a3c5f1;
+    /* background: linear-gradient(135deg, #e8f2ff, #d5e6ff); */
+    /* border: 2px dashed #a3c5f1; */
     border-radius: 16px;
 }
 
@@ -461,11 +565,15 @@ HEADER
 }
 
 .projeto-imagem-principal img {
-    width: 100%;
+    width: 120%;
     height: 100%;
     min-height: 300px;
     object-fit: cover;
     border-radius: 12px;
+    transition: all 0.3s ease;
+}
+.projeto-imagem-principal img:hover {
+    transform: scale(1.025);
 }
 
 .projeto-miniaturas {
@@ -489,7 +597,7 @@ HEADER
     font-size: 11px;
     color: #6582a9;
     background: #edf4ff;
-    border: 1px dashed #b5cbed;
+    /* border: 1px dashed #b5cbed; */
     border-radius: 10px;
 }
 
@@ -497,8 +605,19 @@ HEADER
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.3s ease;
+}
+.projeto-miniaturas img:hover {
+    transform: scale(1.05);
 }
 
+.projeto-logo-nome {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 /* RESPONSIVIDADE */
 
 @media (max-width: 900px) {
