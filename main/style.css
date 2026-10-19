@@ -85,7 +85,7 @@ HERO SECTION
     padding: 100px 0;
     overflow: hidden;
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.9)),
+        linear-gradient(rgba(0, 0, 0, 0.8)),
         url('imgs/background/background.png');
 }
 
@@ -116,9 +116,41 @@ HERO SECTION
     filter: drop-shadow(0 0 20px rgb(0,0,0, 1));
     animation: aparecer-hero-1 1s ease;
 }
+.hero-logo img {
+    width: 32vw;
+    filter: drop-shadow(0 0 20px rgb(0,0,0, 1));
+}
 .logo-SPECIUS {
     animation: aparecer-hero 1s ease;
 }
+.animate-button {
+    animation: aparecer-hero 2s ease;
+}
+.arco-div {
+  /* Define o tamanho inicial (0 para esconder) */
+  width: 0; 
+  /* O overflow: hidden garante que o que ultrapassar a largura da div seja cortado */
+  overflow: hidden; 
+  /* Adiciona a animação na largura */
+  animation: arco 5s cubic-bezier(.58,.3,.34,.88);
+}
+
+.arco-img {
+  /* Garante que a imagem mantenha o tamanho original ou cubra o espaço sem deformar */
+  display: block;
+  width: 300px; /* Defina a largura real da sua imagem aqui */
+  object-fit: cover;
+}
+
+@keyframes arco {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%; /* Deve ser a mesma largura da imagem */
+  }
+}
+
 @keyframes aparecer-hero-1 {
     from {
         opacity: 0;
@@ -146,6 +178,7 @@ HERO SECTION
 
 .hero-content-text h1{
     color: white;
+    font-size:1.7vw;
     font-weight: 200;
     text-shadow: 0 0 20px #000;
     animation: aparecer-hero-2 1.5s ease;
@@ -212,55 +245,92 @@ HERO SECTION
 }
 .estrela {
     position: relative;
-    filter: drop-shadow(0 0 10px rgb(255, 96, 33));
+    filter: drop-shadow(0 0 10px rgb(255, 126, 75));
     z-index: 1;
 }
 @keyframes stars {
     0% {
         opacity: 0;
     }
-    50% {
+    75% {
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
 }
+@keyframes stars-glow {
+    0% {
+        filter: drop-shadow(0 0 10px rgba(255, 96, 33, 0));
+    }
+    50% {
+        filter: drop-shadow(0 0 10px rgba(255, 96, 33, 0));
+    }
+    75% {
+        filter: drop-shadow(0 0 30px rgb(255, 255, 255));
+        filter: drop-shadow(0 0 30px rgb(255, 255, 255));
+        filter: drop-shadow(0 0 30px rgb(255, 255, 255));
+    }
+    100% {
+        filter: drop-shadow(0 0 10px rgba(255, 96, 33, 0));
+    }
+}
+@keyframes stars-glow-2 {
+    0% {
+        filter: drop-shadow(0 0 10px rgba(255, 96, 33, 0));
+    } 
+    50% {
+        filter: drop-shadow(0 0 30px rgb(255, 255, 255));
+        filter: drop-shadow(0 0 30px rgb(255, 255, 255));
+    }
+    75% {
+        filter: drop-shadow(0 0 10px rgba(255, 96, 33, 0));
+    }
+    100% {
+        filter: drop-shadow(0 0 10px rgba(255, 96, 33, 0));
+    }
+}
 .antlia {
     position: absolute;
-    right: 5vh;
+    right: 3vh;
     top: 5vh;
-    animation: stars 1s ease;
+    animation: stars 2s ease;
 }
 .antlia img {
     width: 22vw;
+    animation: stars-glow 5s infinite ease;
 }
 .horologium {
     position: absolute;
-    right: 100px;
+    right: 2vw;
     top: 200px;
-    animation: stars 1.75s ease;
+    animation: stars 2.5s ease;
 }
 .horologium img {
     width: 22vw;
+    animation: stars-glow 5s infinite reverse ease;
 }
 .octans {
     position: absolute;
-    right: 600px;
+    right: 30vw;
     top: 50px;
-    animation: stars 2.5s ease;
+    animation: stars 3s ease;
 }
 .octans img {
     width: 13vw;
+    animation: stars-glow-2 5s infinite reverse ease;
+
 }
 .telescopium {
     position: absolute;
-    right: 600px;
+    right: 30vw;
     top: 200px;
-    animation: stars 3.25s ease;
+    animation: stars 3.75s ease;
 }
 .telescopium img {
     width: 22vw;
+    animation: stars-glow 7s infinite reverse ease;
+
 }
 
 @keyframes aparecer-hero {
