@@ -132,7 +132,7 @@ HERO SECTION
   /* O overflow: hidden garante que o que ultrapassar a largura da div seja cortado */
   overflow: hidden; 
   /* Adiciona a animação na largura */
-  animation: arco 5s cubic-bezier(.58,.3,.34,.88);
+  animation: arco 5s cubic-bezier(.58,.3,.34,.88) forwards;
 }
 
 .arco-img {
@@ -147,7 +147,7 @@ HERO SECTION
     width: 0;
   }
   100% {
-    width: 100%; /* Deve ser a mesma largura da imagem */
+    width: 32vw; /* Deve ser a mesma largura da imagem */
   }
 }
 
@@ -178,7 +178,7 @@ HERO SECTION
 
 .hero-content-text h1{
     color: white;
-    font-size:1.7vw;
+    font-size:1.5vw;
     font-weight: 200;
     text-shadow: 0 0 20px #000;
     animation: aparecer-hero-2 1.5s ease;
@@ -245,7 +245,7 @@ HERO SECTION
 }
 .estrela {
     position: relative;
-    filter: drop-shadow(0 0 10px rgb(255, 126, 75));
+    filter: drop-shadow(0 0 10px rgba(75, 147, 255, 1));
     z-index: 1;
 }
 @keyframes stars {
@@ -267,9 +267,7 @@ HERO SECTION
         filter: drop-shadow(0 0 10px rgba(255, 96, 33, 0));
     }
     75% {
-        filter: drop-shadow(0 0 30px rgb(255, 255, 255));
-        filter: drop-shadow(0 0 30px rgb(255, 255, 255));
-        filter: drop-shadow(0 0 30px rgb(255, 255, 255));
+        filter: drop-shadow(0 0 20px rgb(55, 165, 255));
     }
     100% {
         filter: drop-shadow(0 0 10px rgba(255, 96, 33, 0));
@@ -294,7 +292,7 @@ HERO SECTION
     position: absolute;
     right: 3vh;
     top: 5vh;
-    animation: stars 2s ease;
+    animation: stars 3.5s ease;
 }
 .antlia img {
     width: 22vw;
@@ -304,7 +302,7 @@ HERO SECTION
     position: absolute;
     right: 2vw;
     top: 200px;
-    animation: stars 2.5s ease;
+    animation: stars 4s ease;
 }
 .horologium img {
     width: 22vw;
@@ -314,7 +312,7 @@ HERO SECTION
     position: absolute;
     right: 30vw;
     top: 50px;
-    animation: stars 3s ease;
+    animation: stars 4.5s ease;
 }
 .octans img {
     width: 13vw;
@@ -325,14 +323,16 @@ HERO SECTION
     position: absolute;
     right: 30vw;
     top: 200px;
-    animation: stars 3.75s ease;
+    animation: stars 5s ease;
 }
 .telescopium img {
     width: 22vw;
     animation: stars-glow 7s infinite reverse ease;
 
 }
+@keyframes delay-an {
 
+}
 @keyframes aparecer-hero {
     from {
         opacity: 0;
