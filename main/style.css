@@ -87,6 +87,9 @@ HERO SECTION
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.8)),
         url('imgs/background/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-container {
@@ -117,7 +120,7 @@ HERO SECTION
     animation: aparecer-hero-1 1s ease;
 }
 .hero-logo img {
-    width: 32vw;
+    width: 30vw;
     filter: drop-shadow(0 0 20px rgb(0,0,0, 1));
 }
 .logo-SPECIUS {
@@ -129,7 +132,7 @@ HERO SECTION
 .arco-div {
   width: 0; 
   overflow: hidden; 
-  animation: arco 5s cubic-bezier(.58,.3,.34,.88) forwards forwards;
+  animation: arco 5s cubic-bezier(.58,.3,.34,.88) forwards;
 }
 
 .arco-img {
@@ -218,12 +221,12 @@ HERO SECTION
 .btn-hero {
     z-index: 10;
     color: #398fff;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     background-color: transparent;
     border: 2px solid #398fff;
-    border-radius: 10px;
+    border-radius: 15px;
     width: fit-content;
     transition: all ease 0.3s;
 }
@@ -365,15 +368,22 @@ SOBRE
     max-width: 600px;
 }
 .sobre-content-text h2 {
-    font-size: clamp(4vh, 40px, 4.5vh);
+    font-size: clamp(30px, 4vw, 50px);
+    transition: all ease 0.3s;
+    pointer-events: painted;
+}
+.sobre-content-text h2:hover {
+    transform: scale(1.02);
+    color: #023981;
 }
 .sobre-content-text p {
     font-size: clamp(2vh, 20px, 2.5vh);
 }
 .sobre-content-img {
     background-color: #d9d9d9;
-    width: 500px;
-    height: 400px;
+    width: clamp(500px, 30vw, 800px);
+    height: auto;
+    overflow: hidden;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     transition: all ease 0.3s;
@@ -382,7 +392,13 @@ SOBRE
     transform: scale(1.05);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
 }
-
+.sobre-img-container {
+    object-fit: cover;
+}
+.sobre-img-container img {
+    width: 110%;
+    height: 100%;
+}
 /* ===============================
 HEADER
 =============================== */
@@ -418,7 +434,13 @@ SEÇÃO DE PROJETOS
     font-size: clamp(28px, 4vw, 44px);
     margin: 0 0 15px;
     color: #152748;
+    transition: all ease 0.3s;
 }
+.projetos-section .projetos-cabecalho h2:hover {
+    color: #023981;
+    transform: scale(1.02);
+}
+
 
 .projetos-section .projetos-cabecalho p {
     max-width: 600px;
@@ -704,7 +726,7 @@ SEÇÃO DE INTEGRANTES
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 3vw;
     margin-top: 40px;
 }
 .integrante-card {
@@ -757,8 +779,8 @@ SEÇÃO DE INTEGRANTES
     
 }
 .integrante-img {
-    width: 200px;
-    height: 200px;
+    width: clamp(200px, 10vw, 400px);
+    height: clamp(200px, 10vw, 400px);
     overflow: hidden;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -776,6 +798,14 @@ SEÇÃO DE INTEGRANTES
 .integrante-info {
     margin-top: 15px;
     text-align: center;
+}
+.integrantes-contato {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.integrantes-contato-ico img {
+
 }
 
 
