@@ -763,7 +763,7 @@ SEÇÃO DE INTEGRANTES
     filter: blur(0px);
 
     transform: skewX(-25deg);
-    animation: brilho-passando 1.5s infinite;
+    animation: brilho-passando 1.5s forwards;
 
     z-index: 10;
 }
@@ -804,10 +804,14 @@ SEÇÃO DE INTEGRANTES
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
-.integrantes-contato-ico img {
-
+.integrantes-contato-ico {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(4%) saturate(24%) hue-rotate(76deg) brightness(95%) contrast(93%);
+    transition: all ease 0.3s;
 }
-
+.integrantes-contato-ico:hover {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(39%) saturate(6804%) hue-rotate(207deg) brightness(94%) contrast(101%);
+    transform: scale(1.05);
+}
 
 /* RESPONSIVIDADE */
 
