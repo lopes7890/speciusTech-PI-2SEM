@@ -19,13 +19,18 @@
 <body class="montserrat">
   <header class="container">
     <div class="header">
-      <a href="">
+      <a href="#inicio" class="header-link-logo" aria-label="Página inicial">
         <div class="header-logo">
-          <img src="./imgs/logo/Group 6.svg" alt="" width="90px" class="logo-SPECIUS" />
-          <img src="./imgs/logo/SPECIUS.svg" alt="" width="90px" class="logo-SPECIUS" />
+          <img src="./imgs/logo/Group 6.svg" alt="" class="logo-SPECIUS" />
+          <img src="./imgs/logo/SPECIUS.svg" alt="SPECIUS" class="logo-SPECIUS" />
         </div>
       </a>
-      <nav class="navbar">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navbar" id="navbar">
         <ul>
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
@@ -36,6 +41,7 @@
       </nav>
     </div>
   </header>
+
   <main>
     <section class="hero-section" id="inicio">
       <div class="hero-container">
@@ -160,7 +166,7 @@
           <div class="projeto-galeria">
             <div class="projeto-imagem-principal" id="principal">
               <img width="100%" alt="" id="projeto-imagem-atual" src="imgs/Dashboard.png"
-                alt="Imagem principal do projeto"/>
+                alt="Imagem principal do projeto" />
             </div>
             <div class="projeto-miniaturas">
               <div class="miniatura-projeto ativa">
@@ -313,13 +319,13 @@
                 <p>Segunda a sexta, das 8h às 17h</p>
               </div>
             </div>
-            
-              <h3>Prefere escrever?</h3>
-              <p class="contato-descricao">
-                Preencha o formulário ao lado com os detalhes
-                da sua solicitação.
-              </p>
-            
+
+            <h3>Prefere escrever?</h3>
+            <p class="contato-descricao">
+              Preencha o formulário ao lado com os detalhes
+              da sua solicitação.
+            </p>
+
           </aside>
           <!-- Formulário -->
           <div class="contato-formulario-container">

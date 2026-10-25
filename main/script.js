@@ -95,3 +95,57 @@ window.addEventListener("scroll", () => {
     }
 }, { passive: true });
 
+
+//MENU
+
+const menuToggle = document.getElementById('menu-toggle');
+const navbar = document.getElementById('navbar');
+
+function fecharMenu() {
+    navbar.classList.remove('active');
+    menuToggle.classList.remove('active');
+
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Abrir menu');
+}
+
+menuToggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+
+    const menuAberto = navbar.classList.toggle('active');
+
+    menuToggle.classList.toggle('active', menuAberto);
+    menuToggle.setAttribute('aria-expanded', String(menuAberto));
+    menuToggle.setAttribute(
+        'aria-label',
+        menuAberto ? 'Fechar menu' : 'Abrir menu'
+    );
+});
+
+// Fecha ao clicar em uma opção
+navbar.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', fecharMenu);
+});
+
+// Fecha ao clicar fora da navbar
+document.addEventListener('click', (event) => {
+    if (!navbar.contains(event.target) &&
+        !menuToggle.contains(event.target)) {
+        fecharMenu();
+    }
+});
+
+// Fecha com a tecla Escape
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        fecharMenu();
+    }
+});
+
+// Fecha o menu se a tela voltar ao tamanho desktop
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        fecharMenu();
+    }
+});
+
