@@ -595,6 +595,21 @@ HERO SECTION
    CELULARES
 =============================== */
 @media (max-width: 600px) {
+    @keyframes animate {
+    10% {transform: translateX(-750px);}
+    
+    20% {transform: translateX(-750px);}
+    
+    30% {transform: translateX(-500px);}
+    40% {transform: translateX(-500px);}
+    
+    50% {transform: translateX(-280px);}
+    60% {transform: translateX(-280px);}
+    
+    70% {transform: translateX(0);}
+    80% {transform: translateX(0);}
+    100% {transform: translateX(350px);}
+}
     .hero-section {
         padding: 100px 0 50px;
         background-size: cover, cover;
@@ -877,12 +892,14 @@ SOBRE
 @media (max-width: 900px) {
     .sobre-content-text {
         min-width: none;
-        max-width: 90%;
+        max-width: 100%;
+        width: 85vw;
+        margin-bottom: -50px;
     }
     .sobre-content-img {
         min-width: none;
-        max-width: 90%;
-        width: 90%;
+        max-width: none;
+        width: 100%;
     }
 }
 
@@ -1201,6 +1218,27 @@ SEÇÃO DE PROJETOS
 }
 .projeto-logo-nome img:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .projetos-section {
+        padding: 0;
+    }
+    .projeto-detalhes {
+        margin: 0;
+        align-items: center;
+        width: 90vw;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    
 }
 
 /* ===============================
