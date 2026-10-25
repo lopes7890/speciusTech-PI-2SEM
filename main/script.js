@@ -1,10 +1,84 @@
-// Função para entrada estilizada na página
+const elementos = document.querySelectorAll(".reveal");
+
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const obj = document.getElementsByClassName("ascend");
-    if (entry.isIntersecting) {
-        obj.classList.add('aparecer')
-    }
-  });
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.30
 });
 
+elementos.forEach((elemento) => {
+    observer.observe(elemento);
+});
+
+
+document.querySelectorAll(".projeto-galeria").forEach((galeria) => {
+    const principal = galeria.querySelector(
+        ".projeto-imagem-principal img"
+    );
+
+    const miniaturas = galeria.querySelectorAll(
+        ".miniatura-projeto"
+    );
+
+    miniaturas.forEach((miniatura) => {
+        const imagem = miniatura.querySelector("img");
+
+        // Permite selecionar a miniatura pelo teclado
+        miniatura.setAttribute("role", "button");
+        miniatura.setAttribute("tabindex", "0");
+
+        const selecionarImagem = () => {
+            if (principal.src === imagem.src) {
+                miniaturas.forEach((item) => {
+                    item.classList.toggle("ativa", item === miniatura);
+                });
+                return;
+            }
+
+            // Inicia a transição
+            principal.style.opacity = "0";
+
+            setTimeout(() => {
+                principal.src = imagem.src;
+                principal.alt = imagem.alt;
+
+                principal.onload = () => {
+                    principal.style.opacity = "1";
+                };
+
+                // Caso a imagem já esteja em cache
+                if (principal.complete) {
+                    principal.style.opacity = "1";
+                }
+            }, 150);
+
+            // Atualiza a miniatura selecionada
+            miniaturas.forEach((item) => {
+                item.classList.toggle("ativa", item === miniatura);
+            });
+        };
+
+        miniatura.addEventListener("click", selecionarImagem);
+
+        miniatura.addEventListener("keydown", (evento) => {
+            if (evento.key === "Enter" || evento.key === " ") {
+                evento.preventDefault();
+                selecionarImagem();
+            }
+        });
+    });
+});
+
+const hero = document.querySelector(".hero-section");
+
+window.addEventListener("scroll", () => {
+    const scroll = window.scrollY;
+    if (hero) {
+        hero.style.backgroundPositionY = `${scroll * 0.4}px`;
+    }
+}, { passive: true });

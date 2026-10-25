@@ -1,239 +1,452 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPECIUS</title>
-    <link rel="stylesheet" href="./style.css">
-    <!-- FONTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPECIUS</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body class="montserrat">
-    <header class="container">
-        <div class="header">
-            <a href="">
-                <div class="header-logo">
-                    <img src="./imgs/logo/Group 6.svg" alt="" width="90px" class="logo-SPECIUS">
-                    <img src="./imgs/logo/SPECIUS.svg" alt="" width="90px" class="logo-SPECIUS">
-                </div>
-            </a>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+  <header class="container">
+    <div class="header">
+      <a href="">
+        <div class="header-logo">
+          <img src="./imgs/logo/Group 6.svg" alt="" width="90px" class="logo-SPECIUS" />
+          <img src="./imgs/logo/SPECIUS.svg" alt="" width="90px" class="logo-SPECIUS" />
         </div>
-    </header>
-    <main>
-        <section class="hero-section" id="inicio">
-            <div class="hero-container">
-                <div class="efx" style="top: -800px; right: -800px;"></div>
-                <div class="efx" style="bottom: -800px; left: -800px;"></div>
-                <div class="constelacoes">
-                    <div class="estrela antlia"><img src="imgs/estrelas-hero/Antlia.svg" alt="Antlia"></div>
-                    <div class="estrela horologium"><img src="imgs/estrelas-hero/Horologium.svg" width="300px"
-                            alt="Horologium"></div>
-                    <div class="estrela octans"><img src="imgs/estrelas-hero/Octans.svg" width="200px" alt="Octans">
-                    </div>
-                    <div class="estrela telescopium"><img src="imgs/estrelas-hero/Telescopium.svg" width="300px"
-                            alt="Telescopium"></div>
-                </div>
-                <div class="container ascend">
-                    <div class="hero-content">
-                        <div class="hero-logo">
-                            <div class="arco-div"><img src="./imgs/logo/Group 6.svg" alt="" class="arco-img"></div>
-                            <img src="./imgs/logo/SPECIUS.svg" alt="">
-                        </div>
-                        <div class="hero-content-text montserrat">
-                            <h1>Soluções tecnológicas feitas <br>especialmente para você com</h1>
-                            <div class="animation-container">
-                                <div class="hero-animation">
-                                    <span>Confiabilidade</span>
-                                    <span>Segurança</span>
-                                    <span>Performance</span>
-                                    <span>Inovação</span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#projetos" class="btn-hero animate-button"
-                            style="filter: drop-shadow(0 0 20px rgb(0,0,0, 1)); z-index: 100;">Conheça nossas
-                            soluções</a>
-                    </div>
-                </div>
+      </a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#integrantes">Integrantes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section" id="inicio">
+      <div class="hero-container">
+        <div class="efx" style="top: -800px; right: -800px"></div>
+        <div class="efx" style="bottom: -800px; left: -800px"></div>
+        <div class="constelacoes">
+          <div class="estrela antlia">
+            <img src="imgs/estrelas-hero/Antlia.svg" alt="Antlia" />
+          </div>
+          <div class="estrela horologium">
+            <img src="imgs/estrelas-hero/Horologium.svg" width="300px" alt="Horologium" />
+          </div>
+          <div class="estrela octans">
+            <img src="imgs/estrelas-hero/Octans.svg" width="200px" alt="Octans" />
+          </div>
+          <div class="estrela telescopium">
+            <img src="imgs/estrelas-hero/Telescopium.svg" width="300px" alt="Telescopium" />
+          </div>
+        </div>
+        <div class="container ascend">
+          <div class="hero-content">
+            <div class="hero-logo">
+              <div class="arco-div">
+                <img src="./imgs/logo/Group 6.svg" alt="" class="arco-img" />
+              </div>
+              <img src="./imgs/logo/SPECIUS.svg" alt="" />
             </div>
-        </section>
-
-        <!-- SEÇÃO SOBRE -->
-        <section class="sobre-section montserrat" id="sobre">
-            <div class="container">
-                <div class="sobre-content">
-                    <div class="sobre-content-text ascend">
-                        <div>
-                            <span class="projetos-etiqueta">SOBRE NÓS</span>
-                            <h2>QUEM SOMOS?</h2>
-                        </div>
-                        <p id="projeto-descricao">
-                            A SPECIUS é uma empresa de tecnologia especializada
-                            no desenvolvimento de softwares inovadores, criada
-                            para transformar ideias em soluções digitais inteligentes.
-                            Unimos tecnologia, criatividade e excelência para
-                            desenvolver soluções que otimizam processos, impulsionam
-                            negócios e geram resultados reais.
-                        </p>
-                    </div>
-                    <div class="sobre-content-img">
-                        <div class="sobre-img-container">
-                            <img src="./imgs/Integrantes/EquipeSpecius.jpeg" alt="">
-                        </div>
-                    </div>
+            <div class="hero-content-text montserrat">
+              <h1>
+                Soluções tecnológicas feitas <br />especialmente para você com
+              </h1>
+              <div class="animation-container">
+                <div class="hero-animation">
+                  <span>Confiabilidade</span>
+                  <span>Segurança</span>
+                  <span>Performance</span>
+                  <span>Inovação</span>
                 </div>
+              </div>
             </div>
-        </section>
+            <a href="#projetos" class="btn-hero animate-button" style="
+                  filter: drop-shadow(0 0 20px rgb(0, 0, 0, 1));
+                  z-index: 100;
+                ">Conheça nossas soluções</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- SEÇÃO DE PROJETOS -->
-        <section class="projetos-section" id="projetos">
-            <div class="container">
-                <div class="projetos-cabecalho">
-                    <span class="projetos-etiqueta">NOSSAS INICIATIVAS</span>
-                    <h2>CONHEÇA NOSSOS PROJETOS</h2>
-                    <p>
-                        Ciência e tecnologia para transformar
-                        ideias em soluções inovadoras.
-                    </p>
-                </div>
-                <!-- ÍCONES CLICÁVEIS
-                <div class="projetos-lista">
-                    <button class="projeto-icone ativo" data-projeto="0" aria-pressed="true">
-                        <img class="imagem-projeto" src="../site2/imgs/logo/Logo Vetorizada.svg"></img>
-                        <span>GUSTER</span>
-                    </button>
-                </div> -->
-                <div class="projeto-detalhes" aria-live="polite">
-                    <div class="projeto-texto">
-                        <div class="projeto-logo-texto">
-                            <div class="projeto-logo-nome">
-                                <img src="imgs\logo\LogoGuster.svg" width="200px" height="150px" id="icone" alt="">
-                                <span id="projeto-numero">GUSTER</span>
-                            </div>
-                            <h3 id="projeto-titulo">
-                                EEG e alterações de paladar pós-COVID-19
-                            </h3>
-                            <p id="projeto-descricao">
-                                Investigar se o cérebro de pessoas com alterações
-                                de paladar após a COVID-19 apresenta padrões
-                                mensuráveis por EEG durante estímulos gustativos
-                                e utilizar esses padrões para desenvolver um
-                                modelo computacional capaz de auxiliar na triagem
-                                de possíveis casos de hipogeusia e ageusia.
-                            </p>
-                        </div>
-                        <div id="projeto-topicos">
-                            <div>
-                                <strong>Análise cerebral</strong>
-                                <span>Padrões no EEG</span>
-                            </div>
-                            <div>
-                                <strong>Estímulos gustativos</strong>
-                                <span>Avaliação do paladar</span>
-                            </div>
-                            <div>
-                                <strong>Modelo computacional</strong>
-                                <span>Auxílio à triagem</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ESPAÇO RESERVADO PARA AS IMAGENS -->
-                    <div class="projeto-galeria">
-
-                        <div class="projeto-imagem-principal" id="projeto-imagem-principal">
-                            <img src="imgs/Dashboard.png" width="100%" alt="">
-                        </div>
-                        <div class="projeto-miniaturas">
-                            <div><img src="imgs/BCI.webp" alt=""></div>
-                            <div><img src="imgs/Consulta-com-BCI.png" alt=""></div>
-                            <div><img src="imgs/exameBCI.png" alt=""></div>
-                        </div>
-                    </div>
-                </div>
+    <!-- SEÇÃO SOBRE -->
+    <section class="sobre-section montserrat" id="sobre">
+      <div class="container">
+        <div class="sobre-content reveal">
+          <div class="sobre-content-text reveal">
+            <div class="reveal">
+              <span class="projetos-etiqueta">SOBRE NÓS</span>
+              <h2 class="reveal">QUEM SOMOS?</h2>
             </div>
-        </section>
-        <section class="integrantes-section" id="integrantes">
-            <div class="container">
-                <div class="integrantes-container">
-                    <span class="projetos-etiqueta">INTEGRANTES</span>
-                    <h2>Nossa equipe</h2>
-                    <div class="integrantes-cards">
-                        <div class="integrante-card">
-                            <div class="integrante-img">
-                                <img src="imgs/integrantes/Allison.jpeg" alt="" style="translate: 0px -10px;">
-                            </div>
-                            <div class="integrante-info">
-                                <h3>Allison Lopes</h3>
-                                <p>Desenvolvedor Full Stack</p>
-                            </div>
-                            <div class="integrantes-contato">
-                                <a href="https://www.instagram.com/allison.lopes.733/" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/instagram.png" width="50px" alt="Link para instagram"></a>
-                                <a href="https://www.linkedin.com/in/allison-lopes-da-silva-bosco-b1b82b269/?isSelfProfile=false" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/linkedin.png" width="40px" style="margin-top: 5px; margin-left: 4px;" alt="Link do Linkedin"></a>
-                                <a href="https://github.com/lopes7890" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/github.png" width="42px" style="margin-top: 3px;" alt="Link do Github"></a>
-                            </div>
-                        </div>
-                        <div class="integrante-card">
-                            <div class="integrante-img">
-                                <img src="imgs/integrantes/Osvaldo.jpeg" alt="">
-                            </div>
-                            <div class="integrante-info">
-                                <h3>Osvaldo Hoch</h3>
-                                <p>Desenvolvedor Frontend</p>
-                            </div>
-                            <div class="integrantes-contato">
-                                <a href="https://www.instagram.com/osvaldohoch/" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/instagram.png" width="50px" alt=""></a>
-                                <a href="https://www.linkedin.com/in/osvaldo-hoch/" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/linkedin.png" width="40px" style="margin-top: 5px; margin-left: 4px;" alt="Link do linkedin"></a>
-                                <a href="https://github.com/OsvaldoHoch" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/github.png" width="42px" style="margin-top: 3px;" alt="Link do Github"></a>
-                            </div>
-                        </div>
-                        <div class="integrante-card">
-                            <div class="integrante-img">
-                                <img src="imgs/integrantes/Pamela.png" alt="">
-                            </div>
-                            <div class="integrante-info">
-                                <h3>Pamela</h3>
-                                <p>Desenvolvedora Backend</p>
-                            </div>
-                            <div class="integrantes-contato">
-                                <a href="https://www.instagram.com/st4r_pamell/" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/instagram.png" width="50px" alt=""></a>
-                                <a href="https://www.linkedin.com/in/pamela-candido-4a87b4321/" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/linkedin.png" width="40px" style="margin-top: 5px; margin-left: 4px;" alt="Link do Linkedin"></a>
-                                <a href="https://github.com/Pamela-PC" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/github.png" width="42px" style="margin-top: 3px;" alt="Link do Github"></a>
-                            </div>
-                        </div>
-                        <div class="integrante-card">
-                            <div class="integrante-img">
-                                <img src="imgs/integrantes/Lucas.jpeg" alt="">
-                            </div>
-                            <div class="integrante-info">
-                                <h3>Lucas Ribeiro</h3>
-                                <p>Desenvolvedor Frontend</p>
-                            </div>
-                            <div class="integrantes-contato">
-                                <a href="https://www.instagram.com/lucas_zwalk/" target="_blank" class="integrantes-contato-ico" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/instagram.png" width="50px" alt="Link para instagram"></a>
-                                <a href="https://www.linkedin.com/in/lucas-morato-465592399/?isSelfProfile=false" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/linkedin.png" width="40px" style="margin-top: 5px; margin-left: 4px;" alt="Link do Linkedin"></a>
-                                <a href="https://github.com/Lucas-Rib-dev" target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/github.png" width="42px" style="margin-top: 3px;" alt="Link do Github"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <p id="projeto-descricao" class="reveal">
+              A SPECIUS é uma empresa de tecnologia especializada no
+              desenvolvimento de softwares inovadores, criada para transformar
+              ideias em soluções digitais inteligentes. Unimos tecnologia,
+              criatividade e excelência para desenvolver soluções que otimizam
+              processos, impulsionam negócios e geram resultados reais.
+            </p>
+          </div>
+          <div class="sobre-content-img reveal">
+            <div class="sobre-img-container">
+              <img src="./imgs/Integrantes/EquipeSpecius.jpeg" alt="" />
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE PROJETOS -->
+    <section class="projetos-section" id="projetos">
+      <div class="container">
+        <div class="projetos-cabecalho reveal">
+          <span class="projetos-etiqueta">NOSSAS INICIATIVAS</span>
+          <h2>CONHEÇA NOSSOS PROJETOS</h2>
+          <p class="reveal">
+            Ciência e tecnologia para transformar ideias em soluções
+            inovadoras.
+          </p>
+        </div>
+        <div class="projeto-detalhes reveal" aria-live="polite">
+          <div class="projeto-texto reveal">
+            <div class="projeto-logo-texto reveal">
+              <div class="projeto-logo-nome reveal">
+                <img src="imgs\logo\LogoGuster.svg" width="200px" height="150px" id="icone" alt="" />
+                <span id="projeto-numero">GUSTER</span>
+              </div>
+              <h3 id="projeto-titulo" class="reveal">
+                EEG e alterações de paladar pós-COVID-19
+              </h3>
+              <p id="projeto-descricao" class="reveal">
+                Investigar se o cérebro de pessoas com alterações de paladar
+                após a COVID-19 apresenta padrões mensuráveis por EEG durante
+                estímulos gustativos e utilizar esses padrões para desenvolver
+                um modelo computacional capaz de auxiliar na triagem de
+                possíveis casos de hipogeusia e ageusia.
+              </p>
+            </div>
+            <div id="projeto-topicos">
+              <div>
+                <strong>Análise cerebral</strong>
+                <span>Padrões no EEG</span>
+              </div>
+              <div>
+                <strong>Estímulos gustativos</strong>
+                <span>Avaliação do paladar</span>
+              </div>
+              <div>
+                <strong>Modelo computacional</strong>
+                <span>Auxílio à triagem</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ESPAÇO RESERVADO PARA AS IMAGENS -->
+          <div class="projeto-galeria">
+            <div class="projeto-imagem-principal" id="principal">
+              <img width="100%" alt="" id="projeto-imagem-atual" src="imgs/Dashboard.png"
+                alt="Imagem principal do projeto"/>
+            </div>
+            <div class="projeto-miniaturas">
+              <div class="miniatura-projeto ativa">
+                <img src="imgs/Dashboard.png" alt="" />
+              </div>
+              <div class="miniatura-projeto">
+                <img src="imgs/BCI.webp" alt="" />
+              </div>
+              <div class="miniatura-projeto">
+                <img src="imgs/Consulta-com-BCI.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="integrantes-section" id="integrantes">
+      <div class="container">
+        <div class="integrantes-container reveal">
+          <span class="projetos-etiqueta">INTEGRANTES</span>
+          <h2>NOSSA EQUIPE</h2>
+          <div class="integrantes-cards">
+            <div class="integrante-card">
+              <div class="integrante-img">
+                <img src="imgs/integrantes/Allison.jpeg" alt="" style="translate: 0px -10px" />
+              </div>
+              <div class="integrante-info">
+                <h3>Allison Lopes</h3>
+                <p>Desenvolvedor Full Stack</p>
+              </div>
+              <div class="integrantes-contato reveal">
+                <a href="https://www.instagram.com/allison.lopes.733/" target="_blank"
+                  class="integrantes-contato-ico"><img src="imgs/icons/instagram.png" width="50px"
+                    alt="Link para instagram" /></a>
+                <a href="https://www.linkedin.com/in/allison-lopes-da-silva-bosco-b1b82b269/?isSelfProfile=false"
+                  target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/linkedin.png" width="40px"
+                    style="margin-top: 5px; margin-left: 4px" alt="Link do Linkedin" /></a>
+                <a href="https://github.com/lopes7890" target="_blank" class="integrantes-contato-ico"><img
+                    src="imgs/icons/github.png" width="42px" style="margin-top: 3px" alt="Link do Github" /></a>
+              </div>
+            </div>
+            <div class="integrante-card">
+              <div class="integrante-img">
+                <img src="imgs/integrantes/Osvaldo.jpeg" alt="" />
+              </div>
+              <div class="integrante-info">
+                <h3>Osvaldo Hoch</h3>
+                <p>Desenvolvedor Frontend</p>
+              </div>
+              <div class="integrantes-contato reveal">
+                <a href="https://www.instagram.com/osvaldohoch/" target="_blank" class="integrantes-contato-ico"><img
+                    src="imgs/icons/instagram.png" width="50px" alt="" /></a>
+                <a href="https://www.linkedin.com/in/osvaldo-hoch/" target="_blank" class="integrantes-contato-ico"><img
+                    src="imgs/icons/linkedin.png" width="40px" style="margin-top: 5px; margin-left: 4px"
+                    alt="Link do linkedin" /></a>
+                <a href="https://github.com/OsvaldoHoch" target="_blank" class="integrantes-contato-ico"><img
+                    src="imgs/icons/github.png" width="42px" style="margin-top: 3px" alt="Link do Github" /></a>
+              </div>
+            </div>
+            <div class="integrante-card">
+              <div class="integrante-img">
+                <img src="imgs/integrantes/Pamela.png" alt="" />
+              </div>
+              <div class="integrante-info">
+                <h3>Pamela</h3>
+                <p>Desenvolvedora Backend</p>
+              </div>
+              <div class="integrantes-contato reveal">
+                <a href="https://www.instagram.com/st4r_pamell/" target="_blank" class="integrantes-contato-ico"><img
+                    src="imgs/icons/instagram.png" width="50px" alt="" /></a>
+                <a href="https://www.linkedin.com/in/pamela-candido-4a87b4321/" target="_blank"
+                  class="integrantes-contato-ico"><img src="imgs/icons/linkedin.png" width="40px"
+                    style="margin-top: 5px; margin-left: 4px" alt="Link do Linkedin" /></a>
+                <a href="https://github.com/Pamela-PC" target="_blank" class="integrantes-contato-ico"><img
+                    src="imgs/icons/github.png" width="42px" style="margin-top: 3px" alt="Link do Github" /></a>
+              </div>
+            </div>
+            <div class="integrante-card">
+              <div class="integrante-img">
+                <img src="imgs/integrantes/Lucas.jpeg" alt="" />
+              </div>
+              <div class="integrante-info">
+                <h3>Lucas Ribeiro</h3>
+                <p>Desenvolvedor Frontend</p>
+              </div>
+              <div class="integrantes-contato reveal">
+                <a href="https://www.instagram.com/lucas_zwalk/" target="_blank" class="integrantes-contato-ico"
+                  target="_blank" class="integrantes-contato-ico"><img src="imgs/icons/instagram.png" width="50px"
+                    alt="Link para instagram" /></a>
+                <a href="https://www.linkedin.com/in/lucas-morato-465592399/?isSelfProfile=false" target="_blank"
+                  class="integrantes-contato-ico"><img src="imgs/icons/linkedin.png" width="40px"
+                    style="margin-top: 5px; margin-left: 4px" alt="Link do Linkedin" /></a>
+                <a href="https://github.com/Lucas-Rib-dev" target="_blank" class="integrantes-contato-ico"><img
+                    src="imgs/icons/github.png" width="42px" style="margin-top: 3px" alt="Link do Github" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contato-section" id="contato">
+      <div class="contato-container">
+        <!-- Cabeçalho da seção -->
+        <div class="contato-cabecalho reveal">
+          <span class="projetos-etiqueta">FALE CONOSCO</span>
+          <h2>
+            COMO PODEMOS AJUDAR?
+          </h2>
+          <p>
+            Tem alguma dúvida, sugestão ou precisa de mais informações?
+            Envie sua mensagem e entre em contato conosco.
+          </p>
+        </div>
+        <div class="contato-conteudo reveal">
+          <!-- Informações de contato -->
+          <aside class="contato-informacoes">
+            <h3>Vamos conversar?</h3>
+            <p class="contato-descricao">
+              Estamos disponíveis para ouvir suas ideias,
+              esclarecer dúvidas e ajudar no que for necessário.
+            </p>
+            <div class="contato-item">
+              <div class="contato-icone" aria-hidden="true">
+                @
+              </div>
+              <div>
+                <h4>E-mail</h4>
+                <a href="mailto:contato@exemplo.com">
+                  contato@exemplo.com
+                </a>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icone" aria-hidden="true">
+                ☎
+              </div>
+              <div>
+                <h4>Telefone</h4>
+                <a href="tel:+5511999999999">
+                  (11) 99999-9999
+                </a>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icone" aria-hidden="true">
+                ⏱
+              </div>
+              <div>
+                <h4>Horário de atendimento</h4>
+                <p>Segunda a sexta, das 8h às 17h</p>
+              </div>
+            </div>
+            
+              <h3>Prefere escrever?</h3>
+              <p class="contato-descricao">
+                Preencha o formulário ao lado com os detalhes
+                da sua solicitação.
+              </p>
+            
+          </aside>
+          <!-- Formulário -->
+          <div class="contato-formulario-container">
+            <form class="contato-formulario" action="#" method="post">
+              <div class="contato-campo">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="name" required>
+              </div>
+              <div class="contato-campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="voce@exemplo.com" autocomplete="email"
+                  required>
+              </div>
+              <div class="contato-campo">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Qual é o assunto da mensagem?" required>
+              </div>
+              <div class="contato-campo">
+                <label for="categoria">Tipo de solicitação</label>
+                <select id="categoria" name="categoria" required>
+                  <option value="" disabled selected>
+                    Selecione uma opção
+                  </option>
+                  <option value="duvida">Dúvida</option>
+                  <option value="informacao">Solicitar informações</option>
+                  <option value="sugestao">Sugestão</option>
+                  <option value="problema">Relatar um problema</option>
+                  <option value="parceria">Parceria ou orçamento</option>
+                  <option value="outro">Outro assunto</option>
+                </select>
+              </div>
+              <div class="contato-campo">
+                <label for="mensagem">Sua mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua dúvida ou mensagem..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="contato-botao">
+                Enviar mensagem
+              </button>
+              <p class="contato-privacidade">
+                Utilize seus dados apenas para que possamos
+                responder à sua solicitação.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Identidade visual -->
+      <div class="footer-identidade">
+        <a href="/" class="footer-logo">
+          <div class="logo-footer">
+            <img src="/main/imgs/logo/Group 6.svg" alt="Logo da SPECIUS" />
+            <img src="/main/imgs/logo/SPECIUS.svg" alt="Logo da SPECIUS" />
+          </div>
+        </a>
+
+        <p class="footer-impacto">
+          Transformando ideias em soluções que fazem a diferença.
+        </p>
+
+        <div class="footer-redes">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Navegação -->
+      <div class="footer-coluna">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Informações -->
+      <div class="footer-coluna">
+        <h3>Informações</h3>
+        <ul>
+          <li><a href="#integrantes">Nossa equipe</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="footer-coluna">
+        <h3>Entre em contato</h3>
+        <ul class="footer-contato">
+          <li>
+            <span>E-mail:</span>
+            <a href="mailto:speciuscontato@gmail.com"> speciuscontato@gmail.com </a>
+          </li>
+          <li>
+            <span>Telefone:</span>
+            <a href="tel:+5513999999999"> (13) 9999-99999 </a>
+          </li>
+          <li>
+            <span>Localização:</span>
+            <a href="https://www.google.com/maps/place/Registro+-+SP/@-24.4947188,-48.1854911,133957m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94c5339a7e8698d7:0xd588f106739385b6!8m2!3d-24.5083434!4d-47.8493987!16zL20vMDd2N2wy?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank">Registro, São Paulo.</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Rodapé inferior -->
+    <div class="footer-inferior">
+      <p>
+        &copy; <span id="ano-atual"></span> SPECIUS. Todos os direitos
+        reservados.
+      </p>
+
+      <div class="footer-inferior-links">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos de uso</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
