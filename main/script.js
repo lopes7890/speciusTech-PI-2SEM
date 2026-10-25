@@ -75,10 +75,23 @@ document.querySelectorAll(".projeto-galeria").forEach((galeria) => {
 });
 
 const hero = document.querySelector(".hero-section");
+const form = document.querySelector(".contato-informacoes");
+const integrates = document.querySelector(".integrantes-section");
+const footer = document.querySelector(".footer");
 
 window.addEventListener("scroll", () => {
     const scroll = window.scrollY;
     if (hero) {
-        hero.style.backgroundPositionY = `${scroll * 0.4}px`;
+        hero.style.backgroundPositionY = `${scroll * 0.6}px`;
+    }
+    if (form) {
+        form.style.backgroundPositionY = `${scroll * 0.6}px`;
+    }
+    if (footer) {
+        footer.style.backgroundPositionY = `${scroll * 0.6}px`;
+    }
+    if (integrates) {
+        integrates.style.backgroundPositionY = `${scroll * 0.6}px`;
     }
 }, { passive: true });
+

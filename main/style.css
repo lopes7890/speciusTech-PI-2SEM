@@ -97,6 +97,7 @@ HEADER
     color: #398fff;
 }
 
+
 /* ===============================
 HERO SECTION
 =============================== */
@@ -111,7 +112,7 @@ HERO SECTION
         url('imgs/background/background.png');
     background-size: cover, 110%;
     background-position: center, center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .hero-container {
@@ -387,12 +388,13 @@ SOBRE
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 600px;
+    max-width: 25vw;
 }
 .sobre-content-text h2 {
     font-size: clamp(30px, 4vw, 50px);
     transition: all ease 0.3s;
     pointer-events: painted;
+    min-width: 30vw;
 }
 .sobre-content-text h2:hover {
     transform: scale(1.02);
@@ -403,7 +405,7 @@ SOBRE
 }
 .sobre-content-img {
     background-color: #d9d9d9;
-    width: clamp(500px, 30vw, 800px);
+    width: clamp(20vw, 600px, 25vw);
     height: auto;
     overflow: hidden;
     border-radius: 20px;
@@ -566,6 +568,12 @@ SEÇÃO DE PROJETOS
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+#projeto-numero:hover {
+    color: #0045ac;
+    background-color: #f7faff;
+    transform: scale(1.25);
 }
 .imagem-projeto {
     width: 100px;
@@ -593,6 +601,14 @@ SEÇÃO DE PROJETOS
 #projeto-descricao:hover{
     transform: scale(1.02);
 }
+#projeto-titulo {
+    transition: all ease 0.3s;
+}
+#projeto-titulo:hover {
+    transform: scale(1.05);
+    color: #163369;
+}
+
 
 /* TÓPICOS */
 
@@ -717,6 +733,12 @@ SEÇÃO DE PROJETOS
     justify-content: center;
     align-items: center;
 }
+.projeto-logo-nome img {
+   transition: all ease 0.3s; 
+}
+.projeto-logo-nome img:hover {
+    transform: scale(1.1);
+}
 
 /* ===============================
 SEÇÃO DE INTEGRANTES
@@ -732,7 +754,7 @@ SEÇÃO DE INTEGRANTES
         url('imgs/background/background.png');
     background-size: cover, 100%;
     background-position: center, center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 .integrantes-container {
     display: flex;
@@ -909,7 +931,7 @@ SEÇÃO DE INTEGRANTES
         url('imgs/background/background.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     color: #ffffff;
 }
 
@@ -1157,8 +1179,8 @@ SEÇÃO DE INTEGRANTES
         linear-gradient(rgba(0, 0, 0, 0.8)),
         url('imgs/background/background.png');
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center, center;
+    background-repeat: repeat;
     color: #f1f5f9;
     padding: 60px 8% 0;
     margin-top: 80px;
