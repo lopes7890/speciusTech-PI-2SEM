@@ -246,7 +246,7 @@ HERO SECTION
     padding: 100px 0;
     overflow: hidden;
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.8)),
+        linear-gradient(rgba(0, 0, 0, 0.7)),
         url('imgs/background/background.png');
     background-size: cover, 110%;
     background-position: center, center;
@@ -1251,7 +1251,7 @@ SEÇÃO DE INTEGRANTES
     padding: 0;
     overflow: hidden;
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.8)),
+        linear-gradient(rgba(0, 0, 0, 0.7)),
         url('imgs/background/background.png');
     background-size: cover, 100%;
     background-position: center, center;
@@ -1640,7 +1640,7 @@ SEÇÃO DE INTEGRANTES
     padding: 38px;
     border-radius: 18px;
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.8)),
+        linear-gradient(rgba(0, 0, 0, 0.7)),
         url('imgs/background/background.png');
     background-size: cover;
     background-position: center;
@@ -1889,7 +1889,7 @@ SEÇÃO DE INTEGRANTES
 .footer {
     width: 100%;
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.8)),
+        linear-gradient(rgba(0, 0, 0, 0.6)),
         url('imgs/background/background.png');
     background-size: cover;
     background-position: center, center;
@@ -1907,7 +1907,7 @@ SEÇÃO DE INTEGRANTES
 }
 
 .footer a:hover {
-    color: #ffffff;
+    color: #398fff;
 }
 
 /* Conteúdo principal */
