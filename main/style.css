@@ -1043,16 +1043,16 @@ SEÇÃO DE PROJETOS
     padding: 8px 14px;
     margin-bottom: 18px;
     border-radius: 30px;
-    color: #176bd1;
-    background: #e5f0ff;
+    color: #1D7F8C;
+    background: #e0fdfd;
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1px;
     transition: all ease 0.3s;
 }
 #projeto-numero:hover {
-    color: #0045ac;
-    background-color: #f7faff;
+    color: #006a8a;
+    background-color: #f7fdff;
     transform: scale(1.25);
 }
 .imagem-projeto {
